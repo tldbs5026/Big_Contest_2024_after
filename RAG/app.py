@@ -21,11 +21,11 @@ import google.generativeai as genai
 # shutil.copy("secrets.toml", "/root/.streamlit/secrets.toml")
 
 ## window
-import shutil
-home_dir = os.path.expanduser("~")
-streamlit_dir = os.path.join(home_dir, ".streamlit")
-os.makedirs(streamlit_dir, exist_ok=True)
-shutil.copy("secrets.toml", os.path.join(streamlit_dir, "secrets.toml"))
+# import shutil
+# current_dir = os.getcwd()
+# streamlit_dir = os.path.join(current_dir, ".streamlit")
+# os.makedirs(streamlit_dir, exist_ok=True)
+# shutil.copy("secrets.toml", os.path.join(streamlit_dir, "secrets.toml"))
 
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
